@@ -2,8 +2,6 @@
 
 A modern React-based dashboard to **explore, analyze, bookmark, and manage** popular repositories from GitHub. Built with features like search, filter, sort, export, and share functionalities, this app provides a smooth and insightful GitHub experience.
 
-![Overview](public/main.png)
-
 ## 📌 Features
 
 - 🔍 Search GitHub repositories by keyword
@@ -74,7 +72,7 @@ language, sort, order, page, per_page
 📸 Screenshots
 🎯 Dashboard
 Displays top GitHub repositories with filter, sort, and search capabilities.
-![Dashboard](public/Search.png)
+![Dashboard](public/chai.png)
 
 ⭐ Bookmarked Repositories
 Easily manage your favorite repositories with notes and tags.
@@ -84,22 +82,11 @@ Easily manage your favorite repositories with notes and tags.
 A bar graph that visualizes the star distribution of fetched repositories.
 ![Chart](public/chart.png)
 
-🔗 Links
-GitHub API Docs
-
-React
-
-Chart.js
-
-Lucide Icons
-
-Developer LinkedIn: http://www.linkedin.com/in/dondapati-theerdha-purushotham
-
-Instagram: https://www.instagram.com/velociraptor_alert_bulwark9
-
 📃 License
 MIT License – Free to use, modify, and distribute.
 
+Developer LinkedIn: https://www.linkedin.com/in/chaitanya-choudary-102823278/
+
 🙋‍♂️ Author
-Dondapati Theerdha Purushotham
+Jaliparthi Chaithanya choudary
 🚀 Built with passion and curiosity to make GitHub insights accessible and interactive.
