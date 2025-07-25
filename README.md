@@ -80,7 +80,7 @@ Easily manage your favorite repositories with notes and tags.
 
 📊 Repo Analytics
 A bar graph that visualizes the star distribution of fetched repositories.
-![Chart](public/chart.png)
+![Chart](public/chou.png)
 
 📃 License
 MIT License – Free to use, modify, and distribute.
