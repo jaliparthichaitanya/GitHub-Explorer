@@ -6,11 +6,11 @@ const Footer = () => {
     <footer style={styles.footer}>
       <div style={styles.container}>
         <p style={styles.text}>
-          &copy; {new Date().getFullYear()} <strong>Dondapati Theerdha Purushotham</strong> | GitHub Explorer. Built with ❤️
+          &copy; {new Date().getFullYear()} <strong>Jaliparthi Chaithanya choudary</strong> | GitHub Explorer. Built with Passion 🚀
         </p>
         <div style={styles.socialIcons}>
           <a
-            href="http://www.linkedin.com/in/dondapati-theerdha-purushotham"
+            href="http:https://www.linkedin.com/in/chaitanya-choudary-102823278/"
             target="_blank"
             rel="noopener noreferrer"
             style={styles.iconLink}
@@ -22,18 +22,6 @@ const Footer = () => {
               style={styles.icon}
             />
           </a>
-          <a
-            href="https://www.instagram.com/velociraptor_alert_bulwark9"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles.iconLink}
-            title="Visit Instagram"
-          >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-              alt="Instagram"
-              style={styles.icon}
-            />
           </a>
         </div>
       </div>
