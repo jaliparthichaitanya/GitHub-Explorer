@@ -1,0 +1,86 @@
+/* === DASHBOARD LAYOUT BASE === */
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === HEADER === */
+.dashboard-header {
+  padding: 2rem 1.5rem;
+  background-color: #1f2937;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d1d5db;
+}
+
+/* === MAIN CONTENT === */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+.dashboard-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* === FOOTER === */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* === OPTIONAL SIDEBAR STYLES === */
+.dashboard-sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 1.5rem;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dashboard-no-sidebar .dashboard-content {
+  margin-left: 0;
+}
+
+/* === RESPONSIVE LAYOUT === */
+@media (max-width: 768px) {
+  .dashboard-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}
