@@ -1,75 +1,91 @@
-/* === DASHBOARD LAYOUT BASE === */
+/* === BASE DASHBOARD LAYOUT === */
 .dashboard-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f9fafb;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  color: #2d3748;
 }
 
-/* === HEADER === */
+/* === HEADER SECTION === */
 .dashboard-header {
-  padding: 2rem 1.5rem;
-  background-color: #1f2937;
+  background-color: #2b6cb0;
   color: #ffffff;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1.75rem 2rem;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 .dashboard-title {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .dashboard-subtitle {
   font-size: 1rem;
-  font-weight: 300;
-  color: #d1d5db;
+  font-weight: 400;
+  color: #e2e8f0;
+  margin-top: 0.25rem;
 }
 
-/* === MAIN CONTENT === */
+/* === MAIN BODY SECTION === */
 .dashboard-main {
-  flex: 1;
   display: flex;
-  flex-direction: column;
-  padding: 2rem 1.5rem;
+  flex: 1;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .dashboard-content {
+  flex: 1;
   background-color: #ffffff;
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease;
+}
+
+.dashboard-content:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
 }
 
 /* === FOOTER === */
 .footer {
   text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.85rem;
-  background-color: #f3f4f6;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: #edf2f7;
+  color: #4a5568;
+  border-top: 1px solid #e2e8f0;
 }
 
-/* === OPTIONAL SIDEBAR STYLES === */
+/* === SIDEBAR NAVIGATION === */
 .dashboard-sidebar {
-  width: 250px;
+  width: 260px;
   background-color: #ffffff;
-  border-right: 1px solid #ddd;
-  padding: 1.5rem;
-  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  border-right: 1px solid #e2e8f0;
+  padding: 2rem 1.5rem;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.03);
+  z-index: 1000;
 }
 
-.dashboard-no-sidebar .dashboard-content {
+.dashboard-main.with-sidebar {
+  margin-left: 260px;
+}
+
+/* === NO SIDEBAR MODIFIER === */
+.dashboard-no-sidebar .dashboard-main {
   margin-left: 0;
 }
 
-/* === RESPONSIVE LAYOUT === */
+/* === RESPONSIVE STYLES === */
 @media (max-width: 768px) {
   .dashboard-sidebar {
     position: relative;
@@ -77,10 +93,16 @@
     height: auto;
     border-right: none;
     box-shadow: none;
+    margin-bottom: 1rem;
+  }
+
+  .dashboard-main,
+  .dashboard-main.with-sidebar {
+    margin-left: 0;
+    padding: 1rem;
   }
 
   .dashboard-content {
-    margin-left: 0;
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
